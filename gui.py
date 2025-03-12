@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import os
+import sys
 from db_manager import DBManager
 from export_manager import ExportManager
 
@@ -22,8 +23,8 @@ class App(tk.Tk):
         self.geometry("600x400")
         self.configure(bg=self.BACKGROUND_COLOR)
 
-        self.icon_image = tk.PhotoImage(file="icon/logo_app.png")
-        self.iconphoto(True, self.icon_image)
+        # window ico (png)
+        self._set_icon()
 
         self.db_manager = DBManager()
         self.export_manager = None
@@ -46,8 +47,23 @@ class App(tk.Tk):
         self.init_ui()
         self.apply_styles()
 
-    def init_ui(self):
+    def _set_icon(self):
+        try:
+            if getattr(sys, "frozen", False):
+                base_path = sys._MEIPASS
+            else:
+                base_path = os.path.dirname(os.path.abspath(__file__))
 
+            icon_path = os.path.join(base_path, "icon", "logo_app.png")
+            if os.path.exists(icon_path):
+                self.icon_image = tk.PhotoImage(file=icon_path)
+                self.iconphoto(True, self.icon_image)
+            else:
+                print(f"Icon not found in: {icon_path}")
+        except Exception as e:
+            print(f"Error loading icon: {str(e)}")
+
+    def init_ui(self):
         top_frame = tk.Frame(self, bg=self.BACKGROUND_COLOR)
         top_frame.pack(fill=tk.X, padx=self.PADDING, pady=(self.PADDING, 5))
 
@@ -241,7 +257,20 @@ class App(tk.Tk):
         preview_window.geometry("800x400")
         preview_window.configure(bg=self.BACKGROUND_COLOR)
 
-        preview_window.iconphoto(True, self.icon_image)
+        try:
+            if getattr(sys, "frozen", False):
+                base_path = sys._MEIPASS
+            else:
+                base_path = os.path.dirname(os.path.abspath(__file__))
+
+            icon_path = os.path.join(base_path, "icon", "logo_app.png")
+            if os.path.exists(icon_path):
+                icon_image = tk.PhotoImage(file=icon_path)
+                preview_window.iconphoto(True, icon_image)
+            else:
+                print(f"Icon not found in: {icon_path}")
+        except Exception as e:
+            print(f"Error loading icon: {str(e)}")
 
         main_frame = tk.Frame(preview_window, bg=self.BACKGROUND_COLOR)
         main_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
@@ -666,3 +695,4 @@ class App(tk.Tk):
             self.db_manager.close()
         if self.export_manager:
             self.export_manager.close()
+
