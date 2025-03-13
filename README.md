@@ -1,12 +1,53 @@
+## DB (DuckDB) export tool 
 This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases, views their tables, and exports their structure and data to the following formats:
-
-* SQL
-* SQLite
-* CSV
-* JSON
-* XML
-* Parquet
-* HTML
+<table>
+        <tr>
+            <th></th>
+           <th colspan="2">Extract</th>
+        </tr>
+        <tr>
+            <th>[ Format ]</th>
+            <th>[ Structure ]<br> <em>SQL DDL statement</em></th>
+            <th> [ Data ]</th>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td align="center">Yes</td>
+           <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>SQLite</td>
+            <td align="center">Yes</td>
+            <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>CSV</td>
+            <td align="center">-</td>
+            <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>JSON</td>
+            <td align="center">-</td>
+            <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>XML</td>
+            <td align="center">-</td>
+            <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>Parquet</td>
+            <td align="center">-</td>
+            <td align="center">Yes</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td align="center">-</td>
+            <td align="center">Yes</td>
+        </tr>
+     </table>
+     
+     
 
 ### Main window
 
