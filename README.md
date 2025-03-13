@@ -74,3 +74,5 @@ pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --i
 The created file is saved in the same directory that contains the open database, for quick access to the same directory, click on the open database path at the bottom of the table area.
 
 Search for tables by name in the search field.
+
+***Currently Windows-only***
