@@ -68,7 +68,7 @@ pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --i
 
  1. Open the downloaded or compiled program
  2. Open DB DuckDB (autoload tables).
- 3. Preview the table data.
+ 3. Preview the table data (optional).
  4. Select the export option.
  5. Write the name of the exported file and save it.
 
