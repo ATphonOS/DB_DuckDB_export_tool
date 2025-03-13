@@ -48,13 +48,13 @@ This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases,
      </table>
 
      
-### Download compiled
+## Download compiled
 
 [Realease on Github](https://github.com/ATphonOS/DB_DuckDB_export_tool/releases/tag/v1.0.0)
 
 [Download](https://github.com/ATphonOS/DB_DuckDB_export_tool/releases/download/v1.0.0/ATphonOS.-.DB.DuckDB.export.tool.exe)
 
- ### Compile code  
+ ## Compile code  
 
 To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_export_tool/archive/refs/tags/v1.0.0.zip) and use the compile command:
 
@@ -62,7 +62,7 @@ To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_expo
 pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --icon="icon/logo_app.ico" --add-data "icon/logo_app.png;icon" --add-data "icon/logo_app.ico;icon" --hidden-import=duckdb --hidden-import=sqlite3 main.py
 `
 
- ### Usage
+ ## Usage
  
 ![MainSE](https://github.com/user-attachments/assets/6e787e52-19e3-4e36-bfc1-f017564dc3da)
 
