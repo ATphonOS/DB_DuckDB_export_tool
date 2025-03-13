@@ -6,9 +6,9 @@ This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases,
            <th colspan="2">Extract</th>
         </tr>
         <tr>
-            <th>[ Format ]</th>
-            <th>[ Structure ]<br> <em>SQL DDL statement</em></th>
-            <th> [ Data ]</th>
+            <th> Format </th>
+            <th> Structure <br> <em>SQL DDL statement</em></th>
+            <th>  Data </th>
         </tr>
         <tr>
             <td>SQL</td>
