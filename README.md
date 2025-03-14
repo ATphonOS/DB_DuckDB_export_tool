@@ -56,10 +56,13 @@ This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases,
 
  ## Compile code  
 
-To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_export_tool/archive/refs/tags/v1.0.0.zip) and use the compile command:
+To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_export_tool/archive/refs/tags/v1.0.0.zip) and install the dependencies from requeriments.txt.
 
-`
-pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --icon="icon/logo_app.ico" --add-data "icon/logo_app.png;icon" --add-data "icon/logo_app.ico;icon" --hidden-import=duckdb --hidden-import=sqlite3 main.py
+`pip install -r requirements.txt`
+
+Compile command:
+
+`pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --icon="icon/logo_app.ico" --add-data "icon/logo_app.png;icon" --add-data "icon/logo_app.ico;icon" --hidden-import=duckdb --hidden-import=sqlite3 main.py
 `
 
  ## Usage
