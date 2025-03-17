@@ -62,8 +62,8 @@ To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_expo
 
 Compile command:
 
-`pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onefile --windowed --icon="icon/logo_app.ico" --add-data "icon/logo_app.png;icon" --add-data "icon/logo_app.ico;icon" --hidden-import=duckdb --hidden-import=sqlite3 main.py
-`
+```pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onedir --windowed --icon="icon/logo_app.ico" --add-data "icon/logo_app.png;icon" --add-data "icon/logo_app.ico;icon" --hidden-import=duckdb --hidden-import=sqlite3 --collect-all duckdb --collect-all sqlite3 main.py
+```
 
  ## Usage
  
