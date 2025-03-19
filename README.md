@@ -56,7 +56,7 @@ This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases,
 
  ## Compile code  
 
-To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_export_tool/archive/refs/tags/v1.0.0.zip) and unzip.  
+To compile download the [source code](https://github.com/ATphonOS/DB_DuckDB_export_tool/archive/refs/heads/main.zip) and unzip.  
 
 Option 1:
 
