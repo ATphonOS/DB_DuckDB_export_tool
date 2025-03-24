@@ -1,5 +1,5 @@
 ## DB (DuckDB) export tool 
-This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases, views their tables, and exports their structure and data to the following formats:
+This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases, display their tables, and exports their structure and data to the following formats:
 <table>
         <tr>
             <th></th>
@@ -87,14 +87,14 @@ pyinstaller --name "ATphonOS - DB (DuckDB) export tool" --onedir --windowed --ic
  
 ![MainSE](https://github.com/user-attachments/assets/6e787e52-19e3-4e36-bfc1-f017564dc3da)
 
- 1. Open the downloaded or compiled program
- 2. Open DB DuckDB (autoload tables).
+ 1. Open the downloaded or compiled program.
+ 2. Open the DuckDB database (tables will load automatically).
  3. Preview the table data (optional).
  4. Select the export option.
- 5. Write the name of the exported file and save it.
+ 5. Enter the name of the exported file and save it.
 
-The created file is saved in the same directory that contains the open database, for quick access to the same directory, click on the open database path at the bottom of the table area.
+The exported file will be saved in the same directory as the open database. For quick access to this directory, click the database path displayed at the bottom of the table area.
 
-Search for tables by name in the search field.
+To search for tables by name, use the search field.
 
 ***Currently Windows-only***
