@@ -47,6 +47,17 @@ This program loads [DuckDB](https://github.com/duckdb/duckdb "Title") databases,
         </tr>
      </table>
 
+### Installation
+1. **Clone or Download the Repository**:
+   ```bash
+   git clone https://github.com/ATphonOS/DB_DuckDB_export_tool.git
+   cd ATphonOs DuckDB
+   ```
+2. **Execute the script directly with Python.**
+   ```bash
+   python main.py
+   ```   
+     
      
 ## Download compiled
 
